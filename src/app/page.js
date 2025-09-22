@@ -78,28 +78,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
-      <section className="py-16 px-6 text-center bg-gray-900 text-white">
-        <h2 className="text-3xl font-serif mb-4">Stay in the Loop</h2>
-        <p className="mb-6 text-gray-300">
-          Get updates on new releases, events, and submission calls.
-        </p>
-        <form className="flex flex-col sm:flex-row justify-center gap-4 max-w-xl mx-auto">
-        <input
-          type="email"
-          placeholder="Your email address"
-          className="px-4 py-3 rounded-lg text-gray-900 w-full sm:w-auto flex-1
-                    bg-white border border-gray-300
-                    focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-        />
-          <button
-            type="submit"
-            className="bg-indigo-600 hover:bg-indigo-500 px-6 py-3 rounded-lg transition"
-          >
-            Subscribe
-          </button>
-        </form>
-      </section>
     </main>
   );
 }
