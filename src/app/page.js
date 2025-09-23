@@ -8,38 +8,38 @@ const featuredBooks = [
   {
     title: "Example Book 1",
     description: "Gentrify humblebrag mustache, ramps intelligentsia blackbird spyplane farm-to-table mixtape migas gochujang",
-    imageUrl: "/images/book1.jpg",
+    imageUrl: "/fakebookcover.jpg",
     href: "/books/the-windswept-plains",
   },
   {
     title: "Example Book 2",
     description: "Health goth ennui shabby chic, snackwave readymade umami keytar fashion axe mukbang hella icelan",
-    imageUrl: "/images/book2.jpg",
+    imageUrl: "/book4.jpeg",
     href: "/books/city-of-ashes",
   },
   {
     title: "Example Book 3",
     description: "Gluten-free keytar VHS cornhole bitters distillery seitan poutine williamsburg vinyl neutra",
-    imageUrl: "/images/book3.jpg",
+    imageUrl: "/fakebook2.jpg",
     href: "/books/shadows-and-starlight",
   },
 ];
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
+    <main className="min-h-screen bg-[#FFFDE7] text-gray-900">
       {/* Hero Section */}
-      <section className="relative flex items-center justify-center h-[70vh] bg-gray-100">
+      <section className="relative flex items-center justify-center h-[70vh] bg-[#636B2F]">
         <div className="text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-serif mb-4">
+          <h1 className="text-4xl md:text-6xl font-serif mb-4 text-[#FDE68A]">
             Peregrine Press
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Publishing exceptional voices in contemporary literature.
+          <p className="text-2xl md:text-2xl font-serif leading-relaxed text-[#FAF3E0] my-15 max-w-3xl mx-auto">
+          Our passion is sharing Africa’s literary richness in translation — from histories and poetry to vibrant fiction and short stories. We champion linguistic diversity, cultural dialogue, and literature as a conduit for global empathy.
           </p>
           <Link
             href="/books"
-            className="bg-gray-900 text-white px-6 py-3 text-lg rounded-lg hover:bg-gray-700 transition"
+            className="bg-yellow-500 text-black px-6 py-3 text-lg rounded-lg hover:bg-yellow-700 transition"
           >
             Explore Our Books
           </Link>

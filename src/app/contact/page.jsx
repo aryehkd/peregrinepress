@@ -1,6 +1,6 @@
 export default function ContactPage() {
     return (
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-[#FFFDE7]">
         <section className="py-16 px-6 max-w-4xl mx-auto">
           <h1 className="text-4xl font-serif mb-6 text-center text-gray-900">
             Contact Us
@@ -22,7 +22,7 @@ export default function ContactPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-[#FFFDE7] text-gray-900
                            focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
@@ -37,7 +37,7 @@ export default function ContactPage() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-[#FFFDE7] text-gray-900
                            focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               />
             </div>
@@ -52,7 +52,7 @@ export default function ContactPage() {
                 name="message"
                 rows="6"
                 required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-[#FFFDE7] text-gray-900
                            focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
               ></textarea>
             </div>

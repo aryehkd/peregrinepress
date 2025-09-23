@@ -8,15 +8,15 @@ export default function BookCard({ title, description, imageUrl, href }) {
         src={imageUrl}
         alt={title}
         width={400}
-        height={600}
-        className="w-full object-cover"
+        height={500}
+        className="w-[400px] h-[500px] object-fill"
       />
       <div className="p-4">
-        <h3 className="font-semibold text-lg mb-2">{title}</h3>
-        <p className="text-sm text-gray-600 mb-4">{description}</p>
+        <h3 className="font-semibold font-serif text-lg mb-2">{title}</h3>
+        <p className="text-sm font-serif text-gray-600 mb-4">{description}</p>
         <Link
           href={href}
-          className="text-indigo-600 font-medium hover:underline"
+          className="text-indigo-600 font-medium hover:underline font-serif"
         >
           Learn More →
         </Link>

@@ -12,9 +12,9 @@ export default function PersonCard({ name, role, bio, imageUrl }) {
           className="object-cover w-full h-full"
         />
       </div>
-      <h3 className="text-lg font-semibold text-gray-900">{name}</h3>
-      <p className="text-sm text-gray-700 mb-3">{role}</p>
-      <p className="text-sm text-gray-800">{bio}</p>
+      <h3 className="text-lg font-serif font-semibold text-gray-900">{name}</h3>
+      <p className="text-sm font-serif text-gray-700 mb-3">{role}</p>
+      <p className="text-sm font-serif text-gray-800">{bio}</p>
     </div>
   );
 }

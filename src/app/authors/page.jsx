@@ -1,39 +1,98 @@
+'use client'
+
 import PersonCard from "../components/PersonCard";
+import { useState, useMemo } from "react";
 
 export default function AuthorsPage() {
     const team = [
       {
-        name: "Author Name",
+        name: "Abdallah Zrika",
         role: "Morocco",
-        bio: "Everyday carry plaid polaroid",
-        imageUrl: "/images/team/alexandra.jpg",
+        bio: "",
+        imageUrl: "/people/zrika2.jpeg",
       },
       {
         name: "Author Name",
         role: "Algeria",
-        bio: "hell of pop-up squid cornhole venmo letterpress",
+        bio: "",
         imageUrl: "/images/team/michael.jpg",
       },
       {
         name: "Author Name",
         role: "Morocco",
-        bio: "williamsburg jean shorts quinoa salvia echo park",
+        bio: "",
+        imageUrl: "/images/team/sofia.jpg",
+      },
+      {
+        name: "Author Name",
+        role: "Morocco",
+        bio: "",
+        imageUrl: "/images/team/sofia.jpg",
+      },
+      {
+        name: "Author Name",
+        role: "Morocco",
+        bio: "",
+        imageUrl: "/images/team/sofia.jpg",
+      },
+      {
+        name: "Author Name",
+        role: "Morocco",
+        bio: "",
+        imageUrl: "/images/team/sofia.jpg",
+      },
+      {
+        name: "Author Name",
+        role: "Morocco",
+        bio: "",
+        imageUrl: "/images/team/sofia.jpg",
+      },
+      {
+        name: "Author Name",
+        role: "Morocco",
+        bio: "",
+        imageUrl: "/images/team/sofia.jpg",
+      },
+      {
+        name: "Author Name",
+        role: "Morocco",
+        bio: "",
+        imageUrl: "/images/team/sofia.jpg",
+      },
+      {
+        name: "Author Name",
+        role: "Morocco",
+        bio: "",
         imageUrl: "/images/team/sofia.jpg",
       },
     ];
+
+    const [search, setSearch] = useState("");
+
+    const filteredTeam = useMemo(() => {
+      return team.filter((person) =>
+        person.name.toLowerCase().includes(search.toLowerCase())
+      );
+    }, [team, search]);
   
     return (
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-[#FFFDE7]">
         <section className="py-16 px-6 max-w-6xl mx-auto">
-          <h1 className="text-4xl font-serif mb-8 text-center text-gray-900">
-            Authors
-          </h1>
-          <p className="text-gray-800 max-w-2xl mx-auto text-center mb-12">
-            Peregrine Press is dedicated to publishing bold, distinctive voices in
-            contemporary literature. Meet the people who make it all possible.
-          </p>
+   
+          <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+          <h1 className="text-4xl font-serif text-gray-900">Authors</h1>
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search authors..."
+            className="w-full md:w-64 px-4 py-2 border border-gray-300 rounded-lg shadow-sm 
+            focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500
+            text-gray-900 placeholder-gray-500"          />
+        </div>
+
           <div className="grid gap-8 md:grid-cols-3">
-            {team.map((person, index) => (
+            {filteredTeam.map((person, index) => (
               <PersonCard
                 key={index}
                 name={person.name}
@@ -42,6 +101,11 @@ export default function AuthorsPage() {
                 imageUrl={person.imageUrl}
               />
             ))}
+            {filteredTeam.length === 0 && (
+            <p className="col-span-full font-serif text-center text-gray-500">
+              No authors found.
+            </p>
+          )}
           </div>
         </section>
       </main>
