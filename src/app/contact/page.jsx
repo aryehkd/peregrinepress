@@ -6,7 +6,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-gray-800 max-w-2xl mx-auto text-center mb-12">
-            Have a question, a submission inquiry, or just want to say hello? 
+            Have a question or a submission inquiry? 
             We’d love to hear from you. Fill out the form below and we’ll get back to you as soon as possible.
           </p>
   
@@ -23,7 +23,7 @@ export default function ContactPage() {
                 name="name"
                 required
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-[#FFFDE7] text-gray-900
-                           focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                           focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white"
               />
             </div>
   
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 name="email"
                 required
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-[#FFFDE7] text-gray-900
-                           focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                           focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white"
               />
             </div>
   
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 rows="6"
                 required
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-[#FFFDE7] text-gray-900
-                           focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                           focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white"
               ></textarea>
             </div>
   
@@ -61,7 +61,7 @@ export default function ContactPage() {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-500 transition"
+                className="bg-[#636B2F] text-[#FFFDE7] px-6 py-3 rounded-lg hover:bg-[#FDE68A] hover:text-black transition"
               >
                 Send Message
               </button>

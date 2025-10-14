@@ -5,19 +5,19 @@ export default function BooksPage() {
     {
       title: "Example Book 1",
       description: "Gentrify humblebrag mustache, ramps intelligentsia blackbird spyplane farm-to-table mixtape migas gochujang",
-      imageUrl: "/book6.jpeg",
+      imageUrl: "/placeholder.png",
       href: "/books/the-windswept-plains",
     },
     {
       title: "Example Book 2",
       description: "Health goth ennui shabby chic, snackwave readymade umami keytar fashion axe mukbang hella icelan",
-      imageUrl: "/bookcover3.jpg",
+      imageUrl: "/placeholder.png",
       href: "/books/city-of-ashes",
     },
     {
       title: "Example Book 3",
       description: "Gluten-free keytar VHS cornhole bitters distillery seitan poutine williamsburg vinyl neutra",
-      imageUrl: "/boook5.jpg",
+      imageUrl: "/placeholder.png",
       href: "/books/shadows-and-starlight",
     },
   ];

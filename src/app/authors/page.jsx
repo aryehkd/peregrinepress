@@ -9,62 +9,62 @@ export default function AuthorsPage() {
         name: "Abdallah Zrika",
         role: "Morocco",
         bio: "",
-        imageUrl: "/people/zrika2.jpeg",
+        imageUrl: "/people/09a.jpeg",
       },
-      {
-        name: "Author Name",
-        role: "Algeria",
-        bio: "",
-        imageUrl: "/images/team/michael.jpg",
-      },
-      {
-        name: "Author Name",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/images/team/sofia.jpg",
-      },
-      {
-        name: "Author Name",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/images/team/sofia.jpg",
-      },
-      {
-        name: "Author Name",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/images/team/sofia.jpg",
-      },
-      {
-        name: "Author Name",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/images/team/sofia.jpg",
-      },
-      {
-        name: "Author Name",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/images/team/sofia.jpg",
-      },
-      {
-        name: "Author Name",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/images/team/sofia.jpg",
-      },
-      {
-        name: "Author Name",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/images/team/sofia.jpg",
-      },
-      {
-        name: "Author Name",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/images/team/sofia.jpg",
-      },
+      // {
+      //   name: "Author Name",
+      //   role: "Algeria",
+      //   bio: "",
+      //   imageUrl: "/images/team/michael.jpg",
+      // },
+      // {
+      //   name: "Author Name",
+      //   role: "Morocco",
+      //   bio: "",
+      //   imageUrl: "/images/team/sofia.jpg",
+      // },
+      // {
+      //   name: "Author Name",
+      //   role: "Morocco",
+      //   bio: "",
+      //   imageUrl: "/images/team/sofia.jpg",
+      // },
+      // {
+      //   name: "Author Name",
+      //   role: "Morocco",
+      //   bio: "",
+      //   imageUrl: "/images/team/sofia.jpg",
+      // },
+      // {
+      //   name: "Author Name",
+      //   role: "Morocco",
+      //   bio: "",
+      //   imageUrl: "/images/team/sofia.jpg",
+      // },
+      // {
+      //   name: "Author Name",
+      //   role: "Morocco",
+      //   bio: "",
+      //   imageUrl: "/images/team/sofia.jpg",
+      // },
+      // {
+      //   name: "Author Name",
+      //   role: "Morocco",
+      //   bio: "",
+      //   imageUrl: "/images/team/sofia.jpg",
+      // },
+      // {
+      //   name: "Author Name",
+      //   role: "Morocco",
+      //   bio: "",
+      //   imageUrl: "/images/team/sofia.jpg",
+      // },
+      // {
+      //   name: "Author Name",
+      //   role: "Morocco",
+      //   bio: "",
+      //   imageUrl: "/images/team/sofia.jpg",
+      // },
     ];
 
     const [search, setSearch] = useState("");
@@ -99,6 +99,7 @@ export default function AuthorsPage() {
                 role={person.role}
                 bio={person.bio}
                 imageUrl={person.imageUrl}
+                bgImageUrl={person?.bgImageUrl??undefined}
               />
             ))}
             {filteredTeam.length === 0 && (

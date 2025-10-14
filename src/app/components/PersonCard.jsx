@@ -14,7 +14,6 @@ export default function PersonCard({ name, role, bio, imageUrl }) {
       </div>
       <h3 className="text-lg font-serif font-semibold text-gray-900">{name}</h3>
       <p className="text-sm font-serif text-gray-700 mb-3">{role}</p>
-      <p className="text-sm font-serif text-gray-800">{bio}</p>
     </div>
   );
 }

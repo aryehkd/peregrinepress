@@ -8,19 +8,19 @@ const featuredBooks = [
   {
     title: "Example Book 1",
     description: "Gentrify humblebrag mustache, ramps intelligentsia blackbird spyplane farm-to-table mixtape migas gochujang",
-    imageUrl: "/fakebookcover.jpg",
+    imageUrl: "/placeholder.png",
     href: "/books/the-windswept-plains",
   },
   {
     title: "Example Book 2",
     description: "Health goth ennui shabby chic, snackwave readymade umami keytar fashion axe mukbang hella icelan",
-    imageUrl: "/book4.jpeg",
+    imageUrl: "/placeholder.png",
     href: "/books/city-of-ashes",
   },
   {
     title: "Example Book 3",
     description: "Gluten-free keytar VHS cornhole bitters distillery seitan poutine williamsburg vinyl neutra",
-    imageUrl: "/fakebook2.jpg",
+    imageUrl: "/placeholder.png",
     href: "/books/shadows-and-starlight",
   },
 ];
@@ -45,38 +45,26 @@ export default function Home() {
           </Link>
         </div>
       </section>
+{/* Featured Books */}
+<section className="py-16 px-6 max-w-6xl mx-auto">
+  <h2 className="text-3xl font-serif mb-8 text-center">Featured Titles</h2>
 
-      {/* Featured Books */}
-      <section className="py-16 px-6 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-serif mb-8 text-center">Featured Titles</h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          {featuredBooks.map((book, index) => (
-            <BookCard
-              key={index}
-              title={book.title}
-              description={book.description}
-              imageUrl={book.imageUrl}
-              href={book.href}
-            />
-          ))}
-        </div>
-      </section>
+  {/* Mobile: stacked with gap. md+: 3 per row, space-between */}
+  <div className="flex flex-col gap-8 md:flex-row md:flex-wrap md:justify-between md:gap-y-10 md:gap-x-0">
+    {featuredBooks.map((book, index) => (
+      <div key={index} className="w-full md:w-[20%]">
+        <BookCard
+          title={book.title}
+          description={book.description}
+          imageUrl={book.imageUrl}
+          href={book.href}
+        />
+      </div>
+    ))}
+  </div>
+</section>
 
-      {/* Author Spotlight */}
-      <section className="bg-gray-50 py-16 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-serif mb-6">Author Spotlight</h2>
-          <p className="max-w-2xl mx-auto text-gray-600 mb-8">
-            Meet the writers behind our stories. This month, we’re featuring Ethical 8-bit everyday carry air plant four dollar toast, pabst jawn echo park kombucha
-          </p>
-          <Link
-            href="/authors/jane-doe"
-            className="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition"
-          >
-            Read Interview
-          </Link>
-        </div>
-      </section>
+     
 
     </main>
   );
