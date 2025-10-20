@@ -51,7 +51,7 @@ export default function Home() {
 {/* Content shifted up (≈30% from top) */}
 <div className="relative z-10 h-full px-6">
   {/* Position the wrapper absolutely and anchor its top at ~30% */}
-  <div className="absolute left-1/2 top-[35%] w-full max-w-3xl -translate-x-1/2 text-center">
+  <div className="absolute left-1/2 top-[25%] w-full max-w-3xl -translate-x-1/2 text-center">
     {/* Glass plate for text */}
     <div
       className="
