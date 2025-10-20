@@ -14,7 +14,7 @@ export default function PersonCard({
 
   // overlay stamp (top-right)
   showCornerStamp = true,
-  stampSrc = '/maroc stamp.png', // consider renaming to `/maroc-stamp.png` or URL-encode the space
+  stampSrc = '/maroc_stamp.png', // consider renaming to `/maroc-stamp.png` or URL-encode the space
   stampTiltDeg = -8,            // subtle tilt
   // make the inner white panel narrower/taller
   insetSide = '10%',  // left & right
