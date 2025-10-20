@@ -109,7 +109,7 @@ export default function AboutPage() {
 
       <section className="py-16 px-6 max-w-6xl mx-auto">
           <div className="grid gap-8 md:grid-cols-4">
-            {team.map((person, index) => (
+            {team?.map((person, index) => (
               <PersonCard
                 key={index}
                 name={person.name}

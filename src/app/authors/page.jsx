@@ -92,7 +92,7 @@ export default function AuthorsPage() {
         </div>
 
           <div className="grid gap-8 md:grid-cols-3">
-            {filteredTeam.map((person, index) => (
+            {filteredTeam?.map((person, index) => (
               <PersonCard
                 key={index}
                 name={person.name}
