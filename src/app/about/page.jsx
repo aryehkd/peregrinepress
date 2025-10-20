@@ -116,6 +116,7 @@ export default function AboutPage() {
                 role={person.role}
                 bio={person.bio}
                 imageUrl={person.imageUrl}
+                showCornerStamp={false}
               />
             ))}
           </div>
