@@ -3,23 +3,40 @@ import PersonCard from "../components/PersonCard";
 const team = [
   {
     name: "Victor Reinking",
-    role: "Editor-in-Chief",
+    role: "Publisher",
     bio: "Everyday carry plaid polaroid",
     imageUrl: "/people/Victor-Reinking-c4X5.jpg",
   },
   {
-    name: "Annie Jamison",
-    role: "Editor",
+    name: "El Hadji Malick Ndiaye",
+    role: "Executive Editor",
     bio: "hell of pop-up squid cornhole venmo letterpress",
-    imageUrl: "/people/Annie-jamison.jpeg",
+    imageUrl: "/people/El-Hadji-Malick-Ndiaye.jpg",
+  },
+  {
+    name: "Annie Jamison",
+    role: "Executive Editor",
+    bio: "hell of pop-up squid cornhole venmo letterpress",
+    imageUrl: "/people/C27D1D93-0E4C-4F4F-BC88-36A50392FE95_1_102_o.jpeg",
   },
   {
     name: "Kenny Bates",
-    role: "Editor",
+    role: "Executive Editor",
     bio: "williamsburg jean shorts quinoa salvia echo park",
     imageUrl: "/people/kenny-bates.jpeg",
   },
 ];
+
+const names = [
+  "Ken Bugul",
+  "Felwine Sarr",
+  "Fatima Matousse",
+  "Courtney Erwin",
+  "Nabil Yousfi",
+  "Mark Ingram",
+  "Richard Watts*",
+  "Rick Simonson*",
+  ];
 
 export default function AboutPage() {
   return (
@@ -90,9 +107,8 @@ export default function AboutPage() {
         </article>
       </section>
 
-      {/* Footer CTA */}
       <section className="py-16 px-6 max-w-6xl mx-auto">
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-4">
             {team.map((person, index) => (
               <PersonCard
                 key={index}
@@ -104,6 +120,24 @@ export default function AboutPage() {
             ))}
           </div>
       </section>
+      
+      <section className="flex justify-center bg-[#FFFDE7] p-18 pt-0">
+<div className="w-full max-w-md rounded-2xl border border-black bg-[#FFFDE7] p-8 shadow-lg mt-10">
+<h2 className="text-center text-2xl font-semibold mb-6 font-serif">Advisory Board</h2>
+
+
+<ul className="flex flex-col items-center space-y-3">
+{names.map((name, idx) => (
+<li
+key={idx}
+className="w-full text-center text-lg font-medium font-serif"
+aria-label={`Advisory board member ${name}`}>
+{name}
+</li>
+))}
+</ul>
+</div>
+</section>
     </div>
   )
 }

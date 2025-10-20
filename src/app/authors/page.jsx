@@ -100,6 +100,8 @@ export default function AuthorsPage() {
                 bio={person.bio}
                 imageUrl={person.imageUrl}
                 bgImageUrl={person?.bgImageUrl??undefined}
+                showStampBorder={true}
+
               />
             ))}
             {filteredTeam.length === 0 && (

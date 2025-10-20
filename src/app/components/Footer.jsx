@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Column 1: Company Info & Socials */}
         <div>
           <h3 className="text-lg font-bold mb-4">Peregrine Press</h3>
-          <p className="mt-2">info@yourcompany.com</p>
+          <p className="mt-2">info@peregrinepress.us</p>
           <div className="flex items-center gap-3 mt-4">
             <a href="#" aria-label="Facebook" className="hover:text-white transition">
                 <FaFacebookF />
@@ -58,8 +58,8 @@ export default function Footer() {
             />
             <button
                 type="submit"
-                className="bg-indigo-600 hover:bg-indigo-500 px-6 py-3 rounded-lg transition"
-            >
+                className="inline-flex items-center justify-center rounded-lg bg-yellow-500 px-6 py-3 text-lg font-serif text-black transition hover:bg-yellow-600"
+                >
                 Subscribe
             </button>
           </form>
