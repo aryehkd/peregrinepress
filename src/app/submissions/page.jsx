@@ -6,8 +6,8 @@ export default function SubmissionsPage() {
             Submissions
           </h1>
   
-          <p className="text-black">
-            we are not currently accepting unsolicited submissions
+          <p className="text-black p-10">
+            We are not currently accepting unsolicited submissions
           </p>
         </section>
       </main>
