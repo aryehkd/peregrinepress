@@ -11,14 +11,23 @@ export default function Navbar() {
           className="inline-flex items-center gap-2 text-4xl font-serif font-bold text-gray-900 leading-none gap-8"
         >
           <Image
-            src={"/logo1.png"}
+            src={"/logo-transparent.png"}
             alt={"logo"}
             width={128}
             height={128}
             className="h-[2em] w-auto object-contain align-middle shrink-0"
           /> 
-            <span className="align-middle">Peregrine Press</span>
-
+        <div className="flex flex-col">
+          <span className="font-serif text-xl md:text-4xl">
+            Peregrine Press
+          </span>
+          <span
+            className="font-serif text-sm md:text-base"
+            style={{ marginTop: '2px', color: '#636B30' }}
+          >
+            African Voices in Translation
+          </span>
+        </div>
         </Link>
 
         {/* Navigation Links */}

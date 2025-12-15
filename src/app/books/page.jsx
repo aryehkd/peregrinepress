@@ -3,22 +3,16 @@ import BookCard from "../components/BookCard";
 export default function BooksPage() {
   const books = [
     {
-      title: "Example Book 1",
-      description: "Gentrify humblebrag mustache, ramps intelligentsia blackbird spyplane farm-to-table mixtape migas gochujang",
-      imageUrl: "/placeholder.png",
-      href: "/books/the-windswept-plains",
+      title: "Dahij",
+      description: "Felwine Sarr",
+      imageUrl: "/dahij-ps2.png",
+      href: "/books/dahij",
     },
     {
-      title: "Example Book 2",
-      description: "Health goth ennui shabby chic, snackwave readymade umami keytar fashion axe mukbang hella icelan",
-      imageUrl: "/placeholder.png",
-      href: "/books/city-of-ashes",
-    },
-    {
-      title: "Example Book 3",
-      description: "Gluten-free keytar VHS cornhole bitters distillery seitan poutine williamsburg vinyl neutra",
-      imageUrl: "/placeholder.png",
-      href: "/books/shadows-and-starlight",
+      title: "Letters to an African President",
+      description: "El Hadji Malick Ndiaye",
+      imageUrl: "/letters-ps2.png",
+      href: "/books/letters-to-an-african-president",
     },
   ];
 
@@ -32,7 +26,7 @@ export default function BooksPage() {
           Explore our collection of literary fiction, poetry, and essays from
           some of today’s most compelling voices.
         </p>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="flex flex-col gap-8 md:flex-row md:flex-wrap md:justify-center md:gap-24">
           {books.map((book, index) => (
             <BookCard
               key={index}

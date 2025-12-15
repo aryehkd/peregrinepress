@@ -34,8 +34,8 @@ const names = [
   "Courtney Erwin",
   "Nabil Yousfi",
   "Mark Ingram",
-  "Richard Watts*",
-  "Rick Simonson*",
+  "David Willingham",
+  "Rick Simonson",
   ];
 
 export default function AboutPage() {

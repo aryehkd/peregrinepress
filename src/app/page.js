@@ -8,20 +8,14 @@ const featuredBooks = [
   {
     title: "Dahij",
     description: "Felwine Sarr",
-    imageUrl: "/placeholder.png",
-    href: "/books/the-windswept-plains",
+    imageUrl: "/dahij-ps2.png",
+    href: "/books/dahij",
   },
   {
     title: "Letters to an African President",
     description: "El Hadji Malick Ndiaye",
-    imageUrl: "/placeholder.png",
-    href: "/books/city-of-ashes",
-  },
-  {
-    title: "Metaphysical Ladders",
-    description: "Abdallah Zrika",
-    imageUrl: "/placeholder.png",
-    href: "/books/shadows-and-starlight",
+    imageUrl: "/letters-ps2.png",
+    href: "/books/letters-to-an-african-president",
   },
 ];
 
@@ -72,7 +66,7 @@ export default function Home() {
 
     {/* Floating button outside the overlay */}
     <a
-      href="#catalog"
+      href="books"
       className="
         absolute left-1/2 top-full -translate-x-1/2 mt-4
         inline-flex items-center justify-center rounded-lg
@@ -89,12 +83,14 @@ export default function Home() {
 </section>
 {/* Featured Books */}
 <section className="py-16 px-6 max-w-6xl mx-auto">
-  <h2 className="text-3xl font-serif mb-8 text-center">Forthcoming Titles</h2>
+  <h2 className="text-3xl font-serif mb-8 text-center">
+    Forthcoming Titles
+  </h2>
 
-  {/* Mobile: stacked with gap. md+: 3 per row, space-between */}
-  <div className="flex flex-col gap-8 md:flex-row md:flex-wrap md:justify-between md:gap-y-10 md:gap-x-0">
+  {/* Mobile: stacked. md+: centered row with small gaps */}
+  <div className="flex flex-col gap-8 md:flex-row md:flex-wrap md:justify-center md:gap-24">
     {featuredBooks.map((book, index) => (
-      <div key={index} className="w-full md:w-[20%]">
+      <div key={index} className="w-full md:w-[22%]">
         <BookCard
           title={book.title}
           description={book.description}
