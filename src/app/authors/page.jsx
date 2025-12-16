@@ -9,7 +9,19 @@ export default function AuthorsPage() {
         name: "Abdallah Zrika",
         role: "Morocco",
         bio: "",
-        imageUrl: "/people/09a.jpeg",
+        imageUrl: "/people/abdallah_zrika.jpeg",
+        cornerStampPosition: "topRight",
+        stampSrc: "/maroc_stamp.png",
+        stampTiltDeg: -8,
+      },
+      {
+        name: "El Hadji Malick Ndiaye",
+        role: "Senegal",
+        bio: "",
+        imageUrl: "/people/El-Hadji-Malick-Ndiaye.jpg",
+        cornerStampPosition: "topRight",
+        stampSrc: "/senegal_stamp.png",
+        stampTiltDeg: -8,
       },
       // {
       //   name: "Author Name",
@@ -101,7 +113,9 @@ export default function AuthorsPage() {
                 imageUrl={person.imageUrl}
                 bgImageUrl={person?.bgImageUrl??undefined}
                 showStampBorder={true}
-
+                cornerStampPosition={person?.cornerStampPosition}
+                stampSrc={person?.stampSrc}
+                stampTiltDeg={person?.stampTiltDeg}
               />
             ))}
             {filteredTeam.length === 0 && (

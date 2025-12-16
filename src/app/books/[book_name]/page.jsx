@@ -20,7 +20,9 @@ const BOOKS = {
     author: "El Hadji Malick Ndiaye",
     image: "/letters-ps2.png",
     description:
-      "Short hardcoded description goes here. Replace with real copy when ready.",
+      `In this epistolary collection, El Hadji Malick Ndiaye launches an exacting correspondence with a fictional African leader while drawing upon pre-colonial, colonial, and post-colonial histories.\n
+      These five demanding letters address an unstable continental environment dominated by violence rather than deliberation. Elhadji Malick Ndiaye not only paints a precise and unbiased portrait of the African leader, but he also exposes the constantly changing landscape of conflicting institutions and opportunistic policies that blatantly entangle the public and private spheres.\n
+      El Hadji Malick Ndiaye finds hope in the resurgence of African youth that are radically challenging the powers wielded by over four generations of African leaders. Through this impressive collection, he reframes Africa’s political scars as optimistic receptacles for the seeds of a brighter future.`,
     reviews: [
       { quote: "Review goes here.", source: "Reviewer" },
       { quote: "Review goes here.", source: "Reviewer" },
@@ -67,7 +69,7 @@ export default function BookPage({ params }) {
               <h2 className="font-serif text-xl text-black">
                 Description
               </h2>
-              <p className="mt-3 font-serif text-base leading-relaxed text-black/80">
+              <p className="mt-3 font-serif text-base leading-relaxed text-black/80 whitespace-pre-line">
                 {book.description}
               </p>
             </section>
