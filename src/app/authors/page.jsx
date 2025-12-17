@@ -6,21 +6,30 @@ import { useState, useMemo } from "react";
 export default function AuthorsPage() {
     const team = [
       {
-        name: "Abdallah Zrika",
-        role: "Morocco",
-        bio: "",
-        imageUrl: "/people/abdallah_zrika.jpeg",
-        cornerStampPosition: "topRight",
-        stampSrc: "/maroc_stamp.png",
-        stampTiltDeg: -8,
-      },
-      {
         name: "El Hadji Malick Ndiaye",
         role: "Senegal",
         bio: "",
         imageUrl: "/people/El-Hadji-Malick-Ndiaye.jpg",
         cornerStampPosition: "topRight",
         stampSrc: "/senegal_stamp.png",
+        stampTiltDeg: -8,
+      },
+      {
+        name: "Felwine Sarr",
+        role: "Senegal",
+        bio: "",
+        imageUrl: "/people/felwine-sarr.png",
+        cornerStampPosition: "topRight",
+        stampSrc: "/senegal_stamp.png",
+        stampTiltDeg: -8,
+      },
+      {
+        name: "Abdallah Zrika",
+        role: "Morocco",
+        bio: "",
+        imageUrl: "/people/abdallah_zrika.jpeg",
+        cornerStampPosition: "topRight",
+        stampSrc: "/maroc_stamp.png",
         stampTiltDeg: -8,
       },
       // {
