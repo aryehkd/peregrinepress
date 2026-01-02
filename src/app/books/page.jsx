@@ -38,7 +38,7 @@ export default function BooksPage() {
     <main className="min-h-screen bg-[#FFFDE7]">
       <section className="py-16 px-6 max-w-6xl mx-auto">
         <h1 className="text-4xl font-serif mb-8 text-center text-gray-900">
-          Our Books
+          Forthcoming Books
         </h1>
         <p className="text-gray-800 max-w-2xl font-serif mx-auto text-center mb-12">
           Explore our collection of literary fiction, poetry, and essays from

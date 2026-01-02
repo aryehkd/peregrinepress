@@ -17,6 +17,24 @@ const featuredBooks = [
     imageUrl: "/letters-template.png",
     href: "/books/letters-to-an-african-president",
   },
+  {
+    title: "Can We Talk About Something Else?",
+    description: "Maissa Bey",
+    imageUrl: "/maissabey.png",
+    href: "/books/can-we-talk-about-something-else",
+  },
+  {
+    title: "Metaphysical Ladders",
+    description: "Abdallah Zrika",
+    imageUrl: "/metaphysicalladders.png",
+    href: "/books/metaphysical-ladders",
+  },
+  {
+    title: "The Blue Trio",
+    description: "Ken Bugul",
+    imageUrl: "/thebluetrio.png",
+    href: "/books/the-blue-trio",
+  },
 ];
 
 export default function Home() {
