@@ -8,7 +8,7 @@ const team = [
     imageUrl: "/people/Victor-Reinking-c4X5.jpg",
   },
   {
-    name: "El Hadji Malick Ndiaye",
+    name: "Elhadji Malick Ndiaye",
     role: "Executive Editor",
     bio: "hell of pop-up squid cornhole venmo letterpress",
     imageUrl: "/people/El-Hadji-Malick-Ndiaye.jpg",
@@ -27,16 +27,56 @@ const team = [
   },
 ];
 
-const names = [
-  "Ken Bugul",
-  "Felwine Sarr",
-  "Fatima Matousse",
-  "Courtney Erwin",
-  "Nabil Yousfi",
-  "Mark Ingram",
-  "David Willingham",
-  "Rick Simonson",
-  ];
+const advisoryBoard = [
+  {
+    name: "Ken Bugul",
+    role: "Author",
+    bio: "",
+    imageUrl: "/people/KenBugul.jpg",
+  },
+  {
+    name: "Felwine Sarr",
+    role: "Author",
+    bio: "",
+    imageUrl: "/people/felwine-sarr.png",
+  },
+  {
+    name: "Fatima Matousse",
+    role: "Filmmaker",
+    bio: "",
+    imageUrl: "/people/FatimaMatousse_1.jpg",
+  },
+  {
+    name: "Courtney Erwin, J.D.",
+    role: "",
+    bio: "",
+    imageUrl: "/people/CourtneyErwin.jpg",
+  },
+  {
+    name: "Nabil Yousfi, J.D.",
+    role: "",
+    bio: "",
+    imageUrl: "/people/NabilYousfi.png",
+  },
+  {
+    name: "Mark Ingram",
+    role: "Professor of Translational Studies, Goucher College",
+    bio: "",
+    imageUrl: "/people/MarkIngram.jpeg",
+  },
+  {
+    name: "David Willingham",
+    role: "",
+    bio: "",
+    imageUrl: "",
+  },
+  {
+    name: "Rick Simonson",
+    role: "Head Buyer and Readings Coordinator, Elliott Bay Book Company",
+    bio: "",
+    imageUrl: "/people/RickSimonson.jpg",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -123,22 +163,46 @@ export default function AboutPage() {
       </section>
       
       <section className="flex justify-center bg-[#FFFDE7] p-18 pt-0">
-<div className="w-full max-w-md rounded-2xl border border-black bg-[#FFFDE7] p-8 shadow-lg mt-10">
-<h2 className="text-center text-2xl font-semibold mb-6 font-serif">Advisory Board</h2>
+        <div className="mt-10 w-full max-w-4xl rounded-2xl border border-black bg-[#FFFDE7] p-8 shadow-lg">
+          <h2 className="mb-8 text-center font-serif text-2xl font-semibold">
+            Advisory Board
+          </h2>
 
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {advisoryBoard.map((member, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col items-center rounded-xl border border-black/70 bg-[#FFFDE7] p-4 shadow-sm"
+              >
+                {/* Image (optional / fallback) */}
+                {member.imageUrl ? (
+                  <img
+                    src={member.imageUrl}
+                    alt={member.name}
+                    className="mb-3 h-20 w-20 rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="mb-3 flex h-20 w-20 items-center justify-center rounded-full border border-black/40 bg-white/60 font-serif text-xl">
+                    {member.name.charAt(0)}
+                  </div>
+                )}
 
-<ul className="flex flex-col items-center space-y-3">
-{names.map((name, idx) => (
-<li
-key={idx}
-className="w-full text-center text-lg font-medium font-serif"
-aria-label={`Advisory board member ${name}`}>
-{name}
-</li>
-))}
-</ul>
-</div>
-</section>
+                {/* Name */}
+                <div className="text-center font-serif text-base font-semibold">
+                  {member.name}
+                </div>
+
+                {/* Role (only if present) */}
+                {member.role && (
+                  <div className="mt-1 text-center font-serif text-sm text-black/70">
+                    {member.role}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

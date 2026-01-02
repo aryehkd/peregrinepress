@@ -6,7 +6,7 @@ import { useState, useMemo } from "react";
 export default function AuthorsPage() {
     const team = [
       {
-        name: "El Hadji Malick Ndiaye",
+        name: "Elhadji Malick Ndiaye",
         role: "Senegal",
         bio: "",
         imageUrl: "/people/El-Hadji-Malick-Ndiaye.jpg",

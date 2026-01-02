@@ -13,8 +13,8 @@ const featuredBooks = [
   },
   {
     title: "Letters to an African President",
-    description: "El Hadji Malick Ndiaye",
-    imageUrl: "/letters-ps2.png",
+    description: "Elhadji Malick Ndiaye",
+    imageUrl: "/letters-template.png",
     href: "/books/letters-to-an-african-president",
   },
 ];
