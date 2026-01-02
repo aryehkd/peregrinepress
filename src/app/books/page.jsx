@@ -17,7 +17,7 @@ export default function BooksPage() {
     {
       title: "Can We Talk About Something Else?",
       description: "Maïssa Bey",
-      imageUrl: "/maissabey3.png",
+      imageUrl: "/maissabey4.png",
       href: "/books/can-we-talk-about-something-else",
     },
     {
