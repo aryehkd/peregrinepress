@@ -30,7 +30,7 @@ const BOOKS = {
     slug: "can-we-talk-about-something-else",
     title: "Can We Talk About Something Else?",
     author: "Maissa Bey",
-    image: "/maissabey.png",
+    image: "/maissabey3.png",
     description: `Maïssa Bey’s poignant short story collection *Can We Talk About Something Else?* captures the complexities of life in post–civil war Algeria through a series of intimate narratives shaped by the political turmoil of the “Black Decade.”\n
       Rather than focusing on heroes, these stories delve into the lives of individuals grappling with the slow disintegration of their surroundings. Bey’s characters lose family members, loved ones, and even themselves as they search for meaning in a world where reason and peace feel increasingly elusive. Throughout the collection, Bey weaves together themes of gender relations, Islam, and the human instinct to dream in the face of atrocity.\n
       Bey’s writing is subtle yet powerful. Instead of overtly denouncing the violence and chaos of the era, she narrates the lived experiences of those affected, allowing their collective stories to speak for themselves. Each story bears a distinct style—ranging from poetic monologues to visceral fragments that mirror the way trauma resurfaces in the mind.\n
