@@ -34,9 +34,11 @@ export default function PersonCard({
   const SIZES = {
     xs: {
       pad: 'p-3',
+      padStamp: 'pt-2 px-3 pb-2', // less top padding so avatar sits higher in stamp
       // IMPORTANT: use real Tailwind sizes + keep square
       avatar: 'h-44 w-44',
       name: 'text-xl',
+      nameStamp: 'text-lg', // slightly smaller in stamp so role fits
       role: 'text-base',
       bio: 'text-sm',
       stamp: {
@@ -48,8 +50,10 @@ export default function PersonCard({
     },
     sm: {
       pad: 'p-4',
+      padStamp: 'pt-3 px-4 pb-3',
       avatar: 'h-48 w-48',
       name: 'text-2xl',
+      nameStamp: 'text-xl',
       role: 'text-base',
       bio: 'text-sm',
       stamp: {
@@ -61,8 +65,10 @@ export default function PersonCard({
     },
     md: {
       pad: 'p-6',
+      padStamp: 'pt-4 px-6 pb-4',
       avatar: 'h-56 w-56',
       name: 'text-3xl',
+      nameStamp: 'text-2xl',
       role: 'text-lg',
       bio: 'text-sm',
       stamp: {
@@ -83,10 +89,11 @@ export default function PersonCard({
 
   const avatarTransform = avatarScale ? `scale(${avatarScale})` : undefined
 
-  // Reusable avatar (same behavior in both branches)
+  // Reusable avatar (same behavior in both branches); stamp needs tighter spacing so role shows
+  const avatarMargin = showStampBorder ? 'mb-2' : 'mb-4'
   const Avatar = (
     <div
-      className={`mb-4 relative overflow-hidden rounded-full ring-1 ring-black/5 bg-gray-100 ${sz.avatar}`}
+      className={`${avatarMargin} relative overflow-hidden rounded-full ring-1 ring-black/5 bg-gray-100 ${sz.avatar}`}
     >
       <Image
         src={imageUrl}
@@ -136,7 +143,7 @@ export default function PersonCard({
     
         {/* Inner white panel */}
         <div
-          className="absolute overflow-hidden bg-white pt-2"
+          className="absolute overflow-hidden bg-white pt-0"
           style={{
             top: insetTB,
             right: insetSide,
@@ -144,11 +151,11 @@ export default function PersonCard({
             left: insetSide,
           }}
         >
-          <div className={`flex flex-col items-center text-center ${sz.pad} pb-2`}>
+          <div className={`flex flex-col items-center text-center ${sz.padStamp ?? sz.pad} pb-2`}>
             {Avatar}
     
             {name && (
-              <h3 className={`font-serif font-semibold text-neutral-900 ${sz.name}`}>
+              <h3 className={`font-serif font-semibold text-neutral-900 ${sz.nameStamp ?? sz.name}`}>
                 {name}
               </h3>
             )}
