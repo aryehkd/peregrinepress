@@ -100,7 +100,7 @@ export default function AuthorsPage() {
       <main className="min-h-screen bg-[#FFFDE7]">
         <section className="py-16 px-6 max-w-6xl mx-auto">
    
-          <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-between mb-28 gap-4">
           <h1 className="text-4xl font-serif text-gray-900">Authors</h1>
           <input
             type="text"

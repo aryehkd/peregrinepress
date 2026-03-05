@@ -22,14 +22,14 @@ const team = [
 ];
 
 const advisoryBoardNames = [
-  "El Hadji Malick Ndiaye",
-  "Ken Bugul",
-  "Felwine Sarr",
   "Fatima Matousse",
-  "Courtney Erwin, J.D.",
-  "Nabil Yousfi, J.D.",
+  "Ken Bugul",
+  "El Hadji Malick Ndiaye",
   "Mark Ingram",
   "David Willingham",
+  "Courtney Erwin",
+  "Felwine Sarr",
+  "Nabil Yousfi",
 ];
 
 export default function AboutPage() {
@@ -122,7 +122,7 @@ export default function AboutPage() {
             Advisory Board
           </h2>
 
-          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 font-serif text-base text-neutral-900">
+          <ul className="flex flex-col items-center gap-y-2 font-serif text-base text-neutral-900 list-none">
             {advisoryBoardNames.map((name, idx) => (
               <li key={idx}>{name}</li>
             ))}
