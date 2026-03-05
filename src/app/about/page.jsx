@@ -8,12 +8,6 @@ const team = [
     imageUrl: "/people/Victor-Reinking-c4X5.jpg",
   },
   {
-    name: "Elhadji Malick Ndiaye",
-    role: "Executive Editor",
-    bio: "hell of pop-up squid cornhole venmo letterpress",
-    imageUrl: "/people/El-Hadji-Malick-Ndiaye.jpg",
-  },
-  {
     name: "Annie Jamison",
     role: "Executive Editor",
     bio: "hell of pop-up squid cornhole venmo letterpress",
@@ -27,55 +21,15 @@ const team = [
   },
 ];
 
-const advisoryBoard = [
-  {
-    name: "Ken Bugul",
-    role: "Author",
-    bio: "",
-    imageUrl: "/people/KenBugul.jpg",
-  },
-  {
-    name: "Felwine Sarr",
-    role: "Author",
-    bio: "",
-    imageUrl: "/people/felwine-sarr.png",
-  },
-  {
-    name: "Fatima Matousse",
-    role: "Filmmaker",
-    bio: "",
-    imageUrl: "/people/FatimaMatousse_1.jpg",
-  },
-  {
-    name: "Courtney Erwin, J.D.",
-    role: "",
-    bio: "",
-    imageUrl: "/people/CourtneyErwin.jpg",
-  },
-  {
-    name: "Nabil Yousfi, J.D.",
-    role: "",
-    bio: "",
-    imageUrl: "/people/NabilYousfi.png",
-  },
-  {
-    name: "Mark Ingram",
-    role: "Professor of Translational Studies, Goucher College",
-    bio: "",
-    imageUrl: "/people/MarkIngram.jpeg",
-  },
-  {
-    name: "David Willingham",
-    role: "",
-    bio: "",
-    imageUrl: "",
-  },
-  {
-    name: "Rick Simonson",
-    role: "Head Buyer and Readings Coordinator, Elliott Bay Book Company",
-    bio: "",
-    imageUrl: "/people/RickSimonson.jpg",
-  },
+const advisoryBoardNames = [
+  "El Hadji Malick Ndiaye",
+  "Ken Bugul",
+  "Felwine Sarr",
+  "Fatima Matousse",
+  "Courtney Erwin, J.D.",
+  "Nabil Yousfi, J.D.",
+  "Mark Ingram",
+  "David Willingham",
 ];
 
 export default function AboutPage() {
@@ -148,7 +102,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 px-6 max-w-6xl mx-auto">
-          <div className="grid gap-8 md:grid-cols-4">
+          <div className="flex flex-wrap justify-center gap-8">
             {team?.map((person, index) => (
               <PersonCard
                 key={index}
@@ -168,39 +122,11 @@ export default function AboutPage() {
             Advisory Board
           </h2>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-            {advisoryBoard.map((member, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col items-center rounded-xl border border-black/70 bg-[#FFFDE7] p-4 shadow-sm"
-              >
-                {/* Image (optional / fallback) */}
-                {member.imageUrl ? (
-                  <img
-                    src={member.imageUrl}
-                    alt={member.name}
-                    className="mb-3 h-20 w-20 rounded-full object-cover"
-                  />
-                ) : (
-                  <div className="mb-3 flex h-20 w-20 items-center justify-center rounded-full border border-black/40 bg-white/60 font-serif text-xl">
-                    {member.name.charAt(0)}
-                  </div>
-                )}
-
-                {/* Name */}
-                <div className="text-center font-serif text-base font-semibold">
-                  {member.name}
-                </div>
-
-                {/* Role (only if present) */}
-                {member.role && (
-                  <div className="mt-1 text-center font-serif text-sm text-black/70">
-                    {member.role}
-                  </div>
-                )}
-              </div>
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 font-serif text-base text-neutral-900">
+            {advisoryBoardNames.map((name, idx) => (
+              <li key={idx}>{name}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
     </div>

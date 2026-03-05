@@ -36,6 +36,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold">Explore</h3>
             <ul className="space-y-2">
               <li><Link href="/books" className="text-neutral-300 hover:text-white">Books</Link></li>
+              <li><Link href="/events" className="text-neutral-300 hover:text-white">Events</Link></li>
               <li><Link href="/about" className="text-neutral-300 hover:text-white">About Us</Link></li>
               <li><Link href="/authors" className="text-neutral-300 hover:text-white">Authors</Link></li>
               <li><Link href="/contact" className="text-neutral-300 hover:text-white">Contact</Link></li>

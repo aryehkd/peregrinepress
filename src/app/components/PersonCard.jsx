@@ -18,9 +18,9 @@ export default function PersonCard({
   stampSrc = '/maroc_stamp.png',
   stampTiltDeg = -8,
 
-  // make the inner white panel narrower/taller
-  insetSide = '10%',
-  insetTB = '8%',
+  // make the inner white panel closer to stamp edges (smaller = tighter)
+  insetSide = '6%',
+  insetTB = '5%',
 
   // avatar crop tuning (optional but helpful)
   avatarScale = 0.93, // makes tightly-cropped portraits feel consistent
@@ -35,9 +35,9 @@ export default function PersonCard({
     xs: {
       pad: 'p-3',
       // IMPORTANT: use real Tailwind sizes + keep square
-      avatar: 'h-36 w-36',
-      name: 'text-lg',
-      role: 'text-sm',
+      avatar: 'h-44 w-44',
+      name: 'text-xl',
+      role: 'text-base',
       bio: 'text-sm',
       stamp: {
         w: 250,
@@ -48,9 +48,9 @@ export default function PersonCard({
     },
     sm: {
       pad: 'p-4',
-      avatar: 'h-40 w-40',
-      name: 'text-xl',
-      role: 'text-sm',
+      avatar: 'h-48 w-48',
+      name: 'text-2xl',
+      role: 'text-base',
       bio: 'text-sm',
       stamp: {
         w: 72,
@@ -61,9 +61,9 @@ export default function PersonCard({
     },
     md: {
       pad: 'p-6',
-      avatar: 'h-48 w-48',
-      name: 'text-2xl',
-      role: 'text-base',
+      avatar: 'h-56 w-56',
+      name: 'text-3xl',
+      role: 'text-lg',
       bio: 'text-sm',
       stamp: {
         w: 88,
@@ -116,8 +116,8 @@ export default function PersonCard({
 
         {Avatar}
 
-        <h3 className="text-lg font-serif font-semibold text-gray-900">{name}</h3>
-        <p className="text-sm font-serif text-gray-700 mb-3">{role}</p>
+        <h3 className={`${sz.name} font-serif font-semibold text-gray-900`}>{name}</h3>
+        <p className={`${sz.role} font-serif text-gray-700 mb-3`}>{role}</p>
       </div>
     )
 
@@ -144,7 +144,7 @@ export default function PersonCard({
             left: insetSide,
           }}
         >
-          <div className={`flex h-full flex-col items-center text-center ${sz.pad}`}>
+          <div className={`flex flex-col items-center text-center ${sz.pad} pb-2`}>
             {Avatar}
     
             {name && (
@@ -153,9 +153,8 @@ export default function PersonCard({
               </h3>
             )}
             {role && (
-              <p className={`font-serif text-neutral-700 mb-2 ${sz.role}`}>{role}</p>
+              <p className={`font-serif text-neutral-700 ${sz.role}`}>{role}</p>
             )}
-            <div className="mt-auto" />
           </div>
         </div>
     

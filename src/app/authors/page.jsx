@@ -6,7 +6,7 @@ import { useState, useMemo } from "react";
 export default function AuthorsPage() {
     const team = [
       {
-        name: "Elhadji Malick Ndiaye",
+        name: "El Hadji Malick Ndiaye",
         role: "Senegal",
         bio: "",
         imageUrl: "/people/El-Hadji-Malick-Ndiaye.jpg",
@@ -112,7 +112,7 @@ export default function AuthorsPage() {
             text-gray-900 placeholder-gray-500"          />
         </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-3 justify-items-center md:justify-items-stretch">
             {filteredTeam?.map((person, index) => (
               <PersonCard
                 key={index}
