@@ -36,9 +36,9 @@ export default function PersonCard({
       pad: 'p-3',
       padStamp: 'pt-2 px-3 pb-2', // less top padding so avatar sits higher in stamp
       // IMPORTANT: use real Tailwind sizes + keep square
-      avatar: 'h-44 w-44',
+      avatar: 'h-40 w-40',
       name: 'text-xl',
-      nameStamp: 'text-lg', // slightly smaller in stamp so role fits
+      nameStamp: 'text-base', // slightly smaller in stamp so role fits
       role: 'text-base',
       bio: 'text-sm',
       stamp: {
@@ -51,9 +51,9 @@ export default function PersonCard({
     sm: {
       pad: 'p-4',
       padStamp: 'pt-3 px-4 pb-3',
-      avatar: 'h-48 w-48',
+      avatar: 'h-44 w-44',
       name: 'text-2xl',
-      nameStamp: 'text-xl',
+      nameStamp: 'text-lg',
       role: 'text-base',
       bio: 'text-sm',
       stamp: {
@@ -66,9 +66,9 @@ export default function PersonCard({
     md: {
       pad: 'p-6',
       padStamp: 'pt-4 px-6 pb-4',
-      avatar: 'h-56 w-56',
+      avatar: 'h-48 w-48',
       name: 'text-3xl',
-      nameStamp: 'text-2xl',
+      nameStamp: 'text-xl',
       role: 'text-lg',
       bio: 'text-sm',
       stamp: {
