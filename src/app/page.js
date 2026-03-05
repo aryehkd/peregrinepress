@@ -12,10 +12,10 @@ const newReleases = [
     href: "/books/dahij",
   },
   {
-    title: "Letters to an African President",
+    title: "Letters to My President",
     description: "El Hadji Malick Ndiaye",
     imageUrl: "/letters-cover.png",
-    href: "/books/letters-to-an-african-president",
+    href: "/books/letters-to-my-president",
   },
 ];
 

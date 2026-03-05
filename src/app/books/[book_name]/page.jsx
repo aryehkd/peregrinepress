@@ -13,9 +13,9 @@ const BOOKS = {
       { quote: "placeholder review", source: "Reviewer" },
     ],
   },
-  "letters-to-an-african-president": {
-    slug: "letters-to-an-african-president",
-    title: "Letters to an African President",
+  "letters-to-my-president": {
+    slug: "letters-to-my-president",
+    title: "Letters to My President",
     author: "El Hadji Malick Ndiaye",
     image: "/letters-cover.png",
     description:
