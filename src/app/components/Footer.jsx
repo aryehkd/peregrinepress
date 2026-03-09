@@ -15,14 +15,18 @@ export default function Footer() {
 
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61585418787962"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="text-neutral-300 hover:text-white transition"
               >
                 <FaFacebookF />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/peregrine_press/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="text-neutral-300 hover:text-white transition"
               >
