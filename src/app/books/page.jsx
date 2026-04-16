@@ -17,12 +17,6 @@ const newReleases = [
 
 const forthcomingTitles = [
   {
-    title: "Can We Talk About Something Else?",
-    description: "Maïssa Bey",
-    imageUrl: "/canwetalkaboutsomethingelse.png",
-    href: "/books/can-we-talk-about-something-else",
-  },
-  {
     title: "Metaphysical Ladders",
     description: "Abdallah Zrika",
     imageUrl: "/metaphysicalladders.png",
